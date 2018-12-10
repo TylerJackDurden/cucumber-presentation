@@ -6,6 +6,7 @@ export class HeroPanel {
   public heroesList: ElementFinder;
   public heroes: ElementArrayFinder;
   public detailOfhero: ElementFinder;
+  browser: any;
 
 
   constructor() {
@@ -29,8 +30,7 @@ export class HeroPanel {
     return this.heroes.filter(async (hero) => {
       let heroName = await hero.getText();
       heroName = heroName.trim().toLowerCase();
-      console.log(heroName);
-      return heroName === 'magneta';
+      return specyficHero === heroName;
     }).first();
   }
 
