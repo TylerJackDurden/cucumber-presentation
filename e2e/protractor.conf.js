@@ -19,7 +19,10 @@ exports.config = {
     'browserName': 'chrome',
     chromeOptions: {
       binary: process.env.CHROME_BIN,
-      args: ['--no-sandbox']
+      args: [
+        '--no-sandbox',
+        // '--headless'
+      ]
     }
   },
 
@@ -51,8 +54,9 @@ exports.config = {
     require('ts-node').register({
       project: require('path').join(__dirname, './tsconfig.e2e.json')
     });
-    
+
+
     // jasmine.getEnv().addReporter(new SpecReporter({ spec: { displayStacktrace: true } }));
   }
- 
+
 };

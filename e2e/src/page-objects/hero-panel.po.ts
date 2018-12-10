@@ -6,6 +6,7 @@ export class HeroPanel {
   public heroesList: ElementFinder;
   public heroes: ElementArrayFinder;
   public detailOfhero: ElementFinder;
+  public detailOfHeroID: ElementFinder;
   browser: any;
 
 
@@ -13,7 +14,8 @@ export class HeroPanel {
     this.navButtons = element.all(by.css('app-root nav a'));
     this.heroesList = element(by.className('heroes'));
     this.heroes = element.all(by.className('hero'));
-    this.detailOfhero = element(by.css('app-hero-detail div h2'))
+    this.detailOfhero = element(by.css('app-hero-detail div h2'));
+    this.detailOfHeroID = element(by.className('id'));
   }
   navigateTo() {
     return browser.get('/');

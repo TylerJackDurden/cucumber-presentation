@@ -30,8 +30,12 @@ Then(/^I can see list of heroes$/, async () => {
     expect(await heroPanel.heroesList.isPresent()).to.equal(true);
 });
 
-Then(/^I see "(.*)" details$/, async (hero: string) => {
+Then(/^I see "([^"]*)" details$/, async (hero: string) => {
   expect(await heroPanel.detailOfhero.getText()).to.equal(hero.toLocaleUpperCase() + ' Details');
 });
+
+Then(/^I see "([^"]*)" id$/, async (heroId: number) => {
+    expect(await heroPanel.detailOfHeroID.getText()).to.equal(heroId.toString());
+  });
 
 
