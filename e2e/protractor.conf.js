@@ -5,6 +5,7 @@ const { SpecReporter } = require('jasmine-spec-reporter');
 
 exports.config = {
   allScriptsTimeout: 11000,
+  defaultTimeoutInterval: 30000,
 
   // Here I set which tests will be performed
   //
