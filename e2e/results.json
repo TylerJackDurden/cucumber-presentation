@@ -1,0 +1,146 @@
+[
+  {
+    "description": " As a user in heroes panel i would like to see, search and modify heroes list.",
+    "keyword": "Feature",
+    "name": "Heroes panel",
+    "line": 1,
+    "id": "heroes-panel",
+    "tags": [],
+    "uri": "src\\features\\heroes-panel.feature",
+    "elements": [
+      {
+        "id": "heroes-panel;i-would-like-navigate-to-heroes-panel-and-see-the-list",
+        "keyword": "Scenario",
+        "line": 7,
+        "name": "I would like navigate to heroes panel and see the list",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 5,
+            "name": "Dashboard page is open",
+            "match": {
+              "location": "src\\steps-definitons\\dashboard.steps.ts:11"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 2658000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 8,
+            "name": "I click on Heroes button",
+            "match": {
+              "location": "src\\steps-definitons\\dashboard.steps.ts:15"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 781000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 9,
+            "name": "I can see list of heroes",
+            "match": {
+              "location": "src\\steps-definitons\\dashboard.steps.ts:24"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 696000000
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "match": {
+              "location": "..\\node_modules\\protractor-cucumber-framework\\lib\\resultsCapturer.js:26"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "heroes-panel;when-i-select-a-hero-i-would-like-to-see-his-details",
+        "keyword": "Scenario",
+        "line": 11,
+        "name": "When I select a hero I would like to see his details",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 5,
+            "name": "Dashboard page is open",
+            "match": {
+              "location": "src\\steps-definitons\\dashboard.steps.ts:11"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1517000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 12,
+            "name": "I click on Heroes button",
+            "match": {
+              "location": "src\\steps-definitons\\dashboard.steps.ts:15"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 545000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 13,
+            "name": "I click on Magenta hero",
+            "match": {
+              "location": "src\\steps-definitons\\dashboard.steps.ts:20"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 734000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 14,
+            "name": "I see Magenta details",
+            "match": {
+              "location": "src\\steps-definitons\\dashboard.steps.ts:28"
+            },
+            "result": {
+              "status": "failed",
+              "duration": 575000000,
+              "error_message": "InvalidSelectorError: invalid selector: Unable to locate an element with the xpath expression app-hero-detail div h2 because of the following error:\nTypeError: Failed to execute 'evaluate' on 'Document': The result is not a node set, and therefore cannot be converted to the desired type.\n  (Session info: chrome=71.0.3578.80)\n  (Driver info: chromedriver=2.44.609538 (b655c5a60b0b544917107a59d4153d4bf78e1b90),platform=Windows NT 10.0.17763 x86_64)\n    at Object.checkLegacyResponse (C:\\Users\\pettk\\AppData\\Roaming\\npm\\node_modules\\protractor\\node_modules\\selenium-webdriver\\lib\\error.js:546:15)\n    at parseHttpResponse (C:\\Users\\pettk\\AppData\\Roaming\\npm\\node_modules\\protractor\\node_modules\\selenium-webdriver\\lib\\http.js:509:13)\n    at doSend.then.response (C:\\Users\\pettk\\AppData\\Roaming\\npm\\node_modules\\protractor\\node_modules\\selenium-webdriver\\lib\\http.js:441:30)\n    at process._tickCallback (internal/process/next_tick.js:68:7)Error\n    at ElementArrayFinder.applyAction_ (C:\\Users\\pettk\\AppData\\Roaming\\npm\\node_modules\\protractor\\built\\element.js:459:27)\n    at ElementArrayFinder.(anonymous function).args [as getText] (C:\\Users\\pettk\\AppData\\Roaming\\npm\\node_modules\\protractor\\built\\element.js:91:29)\n    at ElementFinder.(anonymous function).args [as getText] (C:\\Users\\pettk\\AppData\\Roaming\\npm\\node_modules\\protractor\\built\\element.js:831:22)\n    at Object.<anonymous> (C:\\Users\\pettk\\Projects\\cucumber-presentation\\e2e\\src\\steps-definitons\\dashboard.steps.ts:29:39)\n    at step (C:\\Users\\pettk\\Projects\\cucumber-presentation\\e2e\\src\\steps-definitons\\dashboard.steps.ts:32:23)\n    at Object.next (C:\\Users\\pettk\\Projects\\cucumber-presentation\\e2e\\src\\steps-definitons\\dashboard.steps.ts:13:53)\n    at C:\\Users\\pettk\\Projects\\cucumber-presentation\\e2e\\src\\steps-definitons\\dashboard.steps.ts:7:71\n    at new Promise (<anonymous>)\n    at __awaiter (C:\\Users\\pettk\\Projects\\cucumber-presentation\\e2e\\src\\steps-definitons\\dashboard.steps.ts:3:12)\n    at World.<anonymous> (C:\\Users\\pettk\\Projects\\cucumber-presentation\\e2e\\src\\steps-definitons\\dashboard.steps.ts:28:33)"
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "match": {
+              "location": "..\\node_modules\\protractor-cucumber-framework\\lib\\resultsCapturer.js:26"
+            },
+            "result": {
+              "status": "passed"
+            }
+          }
+        ]
+      }
+    ]
+  }
+]

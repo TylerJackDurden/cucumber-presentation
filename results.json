@@ -22,11 +22,11 @@
             "line": 5,
             "name": "Dashboard page is open",
             "match": {
-              "location": "e2e\\src\\steps-definitons\\dashboard.steps.ts:11"
+              "location": "e2e\\src\\steps-definitons\\hero-panel.steps.ts:11"
             },
             "result": {
               "status": "passed",
-              "duration": 2460000000
+              "duration": 1737000000
             }
           },
           {
@@ -35,11 +35,11 @@
             "line": 8,
             "name": "I click on Heroes button",
             "match": {
-              "location": "e2e\\src\\steps-definitons\\dashboard.steps.ts:15"
+              "location": "e2e\\src\\steps-definitons\\hero-panel.steps.ts:15"
             },
             "result": {
               "status": "passed",
-              "duration": 686000000
+              "duration": 643000000
             }
           },
           {
@@ -48,11 +48,11 @@
             "line": 9,
             "name": "I can see list of heroes",
             "match": {
-              "location": "e2e\\src\\steps-definitons\\dashboard.steps.ts:24"
+              "location": "e2e\\src\\steps-definitons\\hero-panel.steps.ts:24"
             },
             "result": {
               "status": "passed",
-              "duration": 591000000
+              "duration": 655000000
             }
           },
           {
@@ -82,11 +82,11 @@
             "line": 5,
             "name": "Dashboard page is open",
             "match": {
-              "location": "e2e\\src\\steps-definitons\\dashboard.steps.ts:11"
+              "location": "e2e\\src\\steps-definitons\\hero-panel.steps.ts:11"
             },
             "result": {
               "status": "passed",
-              "duration": 1320000000
+              "duration": 2118000000
             }
           },
           {
@@ -95,11 +95,11 @@
             "line": 12,
             "name": "I click on Heroes button",
             "match": {
-              "location": "e2e\\src\\steps-definitons\\dashboard.steps.ts:15"
+              "location": "e2e\\src\\steps-definitons\\hero-panel.steps.ts:15"
             },
             "result": {
               "status": "passed",
-              "duration": 633000000
+              "duration": 495000000
             }
           },
           {
@@ -108,11 +108,11 @@
             "line": 13,
             "name": "I click on Magenta hero",
             "match": {
-              "location": "e2e\\src\\steps-definitons\\dashboard.steps.ts:20"
+              "location": "e2e\\src\\steps-definitons\\hero-panel.steps.ts:20"
             },
             "result": {
               "status": "passed",
-              "duration": 654000000
+              "duration": 1105000000
             }
           },
           {
@@ -121,12 +121,11 @@
             "line": 14,
             "name": "I see Magenta details",
             "match": {
-              "location": "e2e\\src\\steps-definitons\\dashboard.steps.ts:28"
+              "location": "e2e\\src\\steps-definitons\\hero-panel.steps.ts:28"
             },
             "result": {
-              "status": "failed",
-              "duration": 572000000,
-              "error_message": "InvalidSelectorError: invalid selector: Unable to locate an element with the xpath expression app-hero-detail div h2 because of the following error:\nTypeError: Failed to execute 'evaluate' on 'Document': The result is not a node set, and therefore cannot be converted to the desired type.\n  (Session info: chrome=70.0.3538.110)\n  (Driver info: chromedriver=2.44.609538 (b655c5a60b0b544917107a59d4153d4bf78e1b90),platform=Windows NT 10.0.17134 x86_64)\n    at Object.checkLegacyResponse (C:\\Users\\pettdo1\\Projekty\\Moje\\cucumber-presentation\\node_modules\\selenium-webdriver\\lib\\error.js:546:15)\n    at parseHttpResponse (C:\\Users\\pettdo1\\Projekty\\Moje\\cucumber-presentation\\node_modules\\selenium-webdriver\\lib\\http.js:509:13)\n    at doSend.then.response (C:\\Users\\pettdo1\\Projekty\\Moje\\cucumber-presentation\\node_modules\\selenium-webdriver\\lib\\http.js:441:30)\n    at <anonymous>\n    at process._tickCallback (internal/process/next_tick.js:189:7)Error\n    at ElementArrayFinder.applyAction_ (C:\\Users\\pettdo1\\Projekty\\Moje\\cucumber-presentation\\node_modules\\protractor\\built\\element.js:459:27)\n    at ElementArrayFinder.(anonymous function).args [as getText] (C:\\Users\\pettdo1\\Projekty\\Moje\\cucumber-presentation\\node_modules\\protractor\\built\\element.js:91:29)\n    at ElementFinder.(anonymous function).args [as getText] (C:\\Users\\pettdo1\\Projekty\\Moje\\cucumber-presentation\\node_modules\\protractor\\built\\element.js:831:22)\n    at Object.<anonymous> (C:\\Users\\pettdo1\\Projekty\\Moje\\cucumber-presentation\\e2e\\src\\steps-definitons\\dashboard.steps.ts:29:39)\n    at step (C:\\Users\\pettdo1\\Projekty\\Moje\\cucumber-presentation\\e2e\\src\\steps-definitons\\dashboard.steps.ts:32:23)\n    at Object.next (C:\\Users\\pettdo1\\Projekty\\Moje\\cucumber-presentation\\e2e\\src\\steps-definitons\\dashboard.steps.ts:13:53)\n    at C:\\Users\\pettdo1\\Projekty\\Moje\\cucumber-presentation\\e2e\\src\\steps-definitons\\dashboard.steps.ts:7:71\n    at new Promise (<anonymous>)\n    at __awaiter (C:\\Users\\pettdo1\\Projekty\\Moje\\cucumber-presentation\\e2e\\src\\steps-definitons\\dashboard.steps.ts:3:12)\n    at World.<anonymous> (C:\\Users\\pettdo1\\Projekty\\Moje\\cucumber-presentation\\e2e\\src\\steps-definitons\\dashboard.steps.ts:28:33)"
+              "status": "passed",
+              "duration": 599000000
             }
           },
           {

@@ -1,6 +1,6 @@
-import { browser, by, element, ElementFinder, promise, ElementArrayFinder } from 'protractor';
+import { browser, by, element, ElementArrayFinder, ElementFinder } from 'protractor';
 
-export class Dashboard {
+export class HeroPanel {
 
   public navButtons: ElementArrayFinder;
   public heroesList: ElementFinder;
@@ -12,7 +12,7 @@ export class Dashboard {
     this.navButtons = element.all(by.css('app-root nav a'));
     this.heroesList = element(by.className('heroes'));
     this.heroes = element.all(by.className('hero'));
-    this.detailOfhero = element(by.xpath('app-hero-detail div h2'))
+    this.detailOfhero = element(by.css('app-hero-detail div h2'))
   }
   navigateTo() {
     return browser.get('/');
@@ -27,14 +27,13 @@ export class Dashboard {
 
   clickOnSpecyficHero(specyficHero: string) {
     return this.heroes.filter(async (hero) => {
-      return await hero.getText() === specyficHero
+      let heroName = await hero.getText();
+      heroName = heroName.trim().toLowerCase();
+      console.log(heroName);
+      return heroName === 'magneta';
     }).first();
   }
 
-  getHeroLiEltById(id: number): ElementFinder {
-    let spanForId = element(by.cssContainingText('li span.badge', id.toString()));
-    return spanForId.element(by.xpath('../..'));
-  }
 
 
 

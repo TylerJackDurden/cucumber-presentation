@@ -8,6 +8,7 @@
     "start": "ng serve",
     "test": "ng test",
     "build": "ng build --prod",
+    "webdriver-update": "webdriver-manager update",
     "e2e": "protractor ./e2e/protractor.conf.js",
     "ng": "ng"
   },
