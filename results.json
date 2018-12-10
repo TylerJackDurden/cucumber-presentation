@@ -1,0 +1,73 @@
+[
+  {
+    "description": " Jako uzytkownik chce po nacisnieciu przycisku na dashbordzie zobaczyc liste herosow.",
+    "keyword": "Feature",
+    "name": "firstone",
+    "line": 1,
+    "id": "firstone",
+    "tags": [],
+    "uri": "e2e\\src\\features\\firstone.feature",
+    "elements": [
+      {
+        "id": "firstone;simple-google-search-for-pandas",
+        "keyword": "Scenario",
+        "line": 7,
+        "name": "Simple Google search for pandas",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 5,
+            "name": "Dashboard page is open",
+            "match": {
+              "location": "e2e\\src\\steps-definitons\\dashboard.steps.ts:11"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 2751000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 8,
+            "name": "I click on Heroes button",
+            "match": {
+              "location": "e2e\\src\\steps-definitons\\dashboard.steps.ts:15"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 664000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 9,
+            "name": "I can see list of heroes",
+            "match": {
+              "location": "e2e\\src\\steps-definitons\\dashboard.steps.ts:20"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 566000000
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "match": {
+              "location": "node_modules\\protractor-cucumber-framework\\lib\\resultsCapturer.js:26"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1000000
+            }
+          }
+        ]
+      }
+    ]
+  }
+]

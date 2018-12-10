@@ -5,29 +5,51 @@ const { SpecReporter } = require('jasmine-spec-reporter');
 
 exports.config = {
   allScriptsTimeout: 11000,
+
+  // Here I set which tests will be performed
+  //
   specs: [
-    './src/**/*.e2e-spec.ts'
+    '../e2e/src/features/*.feature'
   ],
+  SELENIUM_PROMISE_MANAGER: false,
+  useAllAngular2AppRoots: true,
+
   capabilities: {
     'browserName': 'chrome',
-    // For Travis CI only
     chromeOptions: {
       binary: process.env.CHROME_BIN,
       args: ['--no-sandbox']
     }
   },
+
   directConnect: true,
   baseUrl: 'http://localhost:4200/',
-  framework: 'jasmine',
-  jasmineNodeOpts: {
-    showColors: true,
-    defaultTimeoutInterval: 30000,
-    print: function() {}
+
+  // THANKS JASMINE NO NEED YOU ANY MORE
+  //
+  // framework: 'jasmine',
+  // jasmineNodeOpts: {
+  //   showColors: true,
+  //   defaultTimeoutInterval: 30000,
+  //   print: function() {}
+  // },
+  //
+
+  framework: 'custom',
+  cucumberOpts: {
+    compiler: "ts:ts-node/register",
+    require: ['../e2e/src/steps-definitons/*', '../e2e/src/page-objects/*', '../../support/*.ts'],
+    format: 'json:results.json',
   },
+  frameworkPath: require.resolve('protractor-cucumber-framework'),
+
+
   onPrepare() {
+    browser.driver.manage().window().maximize();
+    browser.driver.manage().timeouts().implicitlyWait(10000);
     require('ts-node').register({
       project: require('path').join(__dirname, './tsconfig.e2e.json')
     });
-    jasmine.getEnv().addReporter(new SpecReporter({ spec: { displayStacktrace: true } }));
+    // jasmine.getEnv().addReporter(new SpecReporter({ spec: { displayStacktrace: true } }));
   }
 };
