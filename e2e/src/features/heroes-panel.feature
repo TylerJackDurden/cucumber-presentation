@@ -1,13 +1,14 @@
-Feature: Heroes panel
-  As a user in heroes panel i would like to see, search and modify heroes list.
+  Feature: Heroes panel
+    As a USER I would like to choose hero form hero list and check his details
 
   Background:
     Given "heroes" page is open
 
   Scenario: I would like navigate to heroes panel and see the list
+    When I click on Heroes button
     Then I can see list of heroes
 
-  Scenario Outline: When I select a here I would like to see hero details (all in table)
+  Scenario Outline: When I select a hero I would like to see his/her details
     When I click on "<hero_button>" hero
     Then I see "<hero_header>" details
     And I see "<id>" id
