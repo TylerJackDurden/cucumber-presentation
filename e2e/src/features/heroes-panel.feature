@@ -15,6 +15,7 @@ Feature: Heroes details
     And I see "15" id
 
   # Scenario: When I select a BOMBASTO hero I would like to see his details
+  #   When I click on Heroes button
   #   When I click on "Bombasto" hero
   #   Then I see "Bombasto" details
   #   And I see "13" id
