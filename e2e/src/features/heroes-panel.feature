@@ -9,6 +9,7 @@ Feature: Heroes details
     Then I can see list of heroes
 
   Scenario: When I select a MAGNETA hero I would like to see her details
+    When I click on Heroes button
     When I click on "Magneta" hero
     Then I see "Magneta" details
     And I see "15" id
